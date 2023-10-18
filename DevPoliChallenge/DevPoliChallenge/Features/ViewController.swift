@@ -20,6 +20,4 @@ class ViewController: UIViewController {
         descriptionLabel.textColor = DesignSystem.Colors.tertiary
         view.backgroundColor = DesignSystem.Colors.background
     }
-
 }
-
