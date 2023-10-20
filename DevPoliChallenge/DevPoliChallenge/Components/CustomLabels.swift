@@ -9,8 +9,7 @@
 import UIKit
 
 
-class CustomLabels: UILabel {
-    
+class CustomLabels: UILabel {    
     enum FieldType {
         case title
         case description
