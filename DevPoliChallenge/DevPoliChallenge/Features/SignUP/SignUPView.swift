@@ -159,23 +159,19 @@ extension SignUPView {
             mainView.trailingAnchor.constraint(equalTo: trailingAnchor),
             mainView.bottomAnchor.constraint(equalTo: bottomAnchor),
 
-            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             titleLabel.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor, constant: 62),
             titleLabel.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 22),
             titleLabel.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -22),
 
-            textFieldStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
-            textFieldStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            textFieldStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30),
             textFieldStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 22),
             textFieldStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -22),
             textFieldStackView.heightAnchor.constraint(equalToConstant: 307),
     
-            termsButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             termsButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 74),
             termsButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -74),
             termsButton.bottomAnchor.constraint(equalTo: simpleButton.topAnchor, constant: -12),
    
-            simpleButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             simpleButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 48),
             simpleButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -48),
             simpleButton.heightAnchor.constraint(equalToConstant: 50),
