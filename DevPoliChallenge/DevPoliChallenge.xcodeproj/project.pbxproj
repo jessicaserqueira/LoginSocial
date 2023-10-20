@@ -12,7 +12,7 @@
 		4C33FF352A75A4550002E765 /* DS+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33FF342A75A4550002E765 /* DS+Colors.swift */; };
 		4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3862A32A758819005C9C3B /* AppDelegate.swift */; };
 		4C3862A62A758819005C9C3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3862A52A758819005C9C3B /* SceneDelegate.swift */; };
-		4C3862A82A758819005C9C3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3862A72A758819005C9C3B /* ViewController.swift */; };
+		4C3862A82A758819005C9C3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3862A72A758819005C9C3B /* LoginViewController.swift */; };
 		4C3862AD2A75881C005C9C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3862AC2A75881C005C9C3B /* Assets.xcassets */; };
 		4C3862B02A75881C005C9C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3862AE2A75881C005C9C3B /* LaunchScreen.storyboard */; };
 		A45455A32AE0541B00E8C4D9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45455A22AE0541B00E8C4D9 /* CustomTextField.swift */; };
@@ -21,9 +21,11 @@
 		A45455AC2AE054E800E8C4D9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A45455A92AE054E800E8C4D9 /* Roboto-Regular.ttf */; };
 		A45455AE2AE0554C00E8C4D9 /* UIFont+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45455AD2AE0554C00E8C4D9 /* UIFont+ext.swift */; };
 		A45455B02AE0564600E8C4D9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45455AF2AE0564600E8C4D9 /* CustomButton.swift */; };
+		A49E55012AE2ADD4001A4116 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55002AE2ADD4001A4116 /* LoginView.swift */; };
+		A49E55032AE2ADDE001A4116 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55022AE2ADDE001A4116 /* LoginViewModel.swift */; };
+		A49E55072AE2ADFA001A4116 /* LoginViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55062AE2ADFA001A4116 /* LoginViewCoordinator.swift */; };
 		A4E5A6792AE15F95007C450B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A6782AE15F95007C450B /* Coordinator.swift */; };
 		A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */; };
-		A4E5A67D2AE2A940007C450B /* CustomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A67C2AE2A940007C450B /* CustomLabels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +36,7 @@
 		4C3862A02A758819005C9C3B /* DevPoliChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevPoliChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3862A32A758819005C9C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C3862A52A758819005C9C3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C3862A72A758819005C9C3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C3862A72A758819005C9C3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C3862AC2A75881C005C9C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3862AF2A75881C005C9C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3862B12A75881C005C9C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,9 +46,11 @@
 		A45455A92AE054E800E8C4D9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		A45455AD2AE0554C00E8C4D9 /* UIFont+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+ext.swift"; sourceTree = "<group>"; };
 		A45455AF2AE0564600E8C4D9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A49E55002AE2ADD4001A4116 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A49E55022AE2ADDE001A4116 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A49E55062AE2ADFA001A4116 /* LoginViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCoordinator.swift; sourceTree = "<group>"; };
 		A4E5A6782AE15F95007C450B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		A4E5A67C2AE2A940007C450B /* CustomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +135,10 @@
 		4C3862B92A758A98005C9C3B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A49E54FF2AE2ADC2001A4116 /* Login */,
 				A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */,
 				A4E5A6772AE15F85007C450B /* Protocols */,
 				A45455A12AE053FA00E8C4D9 /* Views */,
-				4C3862A72A758819005C9C3B /* ViewController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -151,7 +155,6 @@
 			children = (
 				A45455A22AE0541B00E8C4D9 /* CustomTextField.swift */,
 				A45455AF2AE0564600E8C4D9 /* CustomButton.swift */,
-				A4E5A67C2AE2A940007C450B /* CustomLabels.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -172,6 +175,17 @@
 				A45455A92AE054E800E8C4D9 /* Roboto-Regular.ttf */,
 			);
 			path = Roboto;
+			sourceTree = "<group>";
+		};
+		A49E54FF2AE2ADC2001A4116 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A49E55002AE2ADD4001A4116 /* LoginView.swift */,
+				4C3862A72A758819005C9C3B /* LoginViewController.swift */,
+				A49E55022AE2ADDE001A4116 /* LoginViewModel.swift */,
+				A49E55062AE2ADFA001A4116 /* LoginViewCoordinator.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		A4E5A6772AE15F85007C450B /* Protocols */ = {
@@ -277,18 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3862A82A758819005C9C3B /* ViewController.swift in Sources */,
+				4C3862A82A758819005C9C3B /* LoginViewController.swift in Sources */,
 				A45455A32AE0541B00E8C4D9 /* CustomTextField.swift in Sources */,
 				A4E5A6792AE15F95007C450B /* Coordinator.swift in Sources */,
 				A45455B02AE0564600E8C4D9 /* CustomButton.swift in Sources */,
 				4C33FF352A75A4550002E765 /* DS+Colors.swift in Sources */,
 				A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */,
+				A49E55032AE2ADDE001A4116 /* LoginViewModel.swift in Sources */,
 				4C33FF332A75A3F40002E765 /* DS.swift in Sources */,
 				A45455AE2AE0554C00E8C4D9 /* UIFont+ext.swift in Sources */,
 				4C33FF2E2A75A2640002E765 /* UIColor+ext.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
+				A49E55012AE2ADD4001A4116 /* LoginView.swift in Sources */,
+				A49E55072AE2ADFA001A4116 /* LoginViewCoordinator.swift in Sources */,
 				4C3862A62A758819005C9C3B /* SceneDelegate.swift in Sources */,
-				A4E5A67D2AE2A940007C450B /* CustomLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
