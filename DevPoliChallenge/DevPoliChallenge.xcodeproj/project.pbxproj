@@ -23,7 +23,11 @@
 		A45455B02AE0564600E8C4D9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45455AF2AE0564600E8C4D9 /* CustomButton.swift */; };
 		A49E55012AE2ADD4001A4116 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55002AE2ADD4001A4116 /* LoginView.swift */; };
 		A49E55032AE2ADDE001A4116 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55022AE2ADDE001A4116 /* LoginViewModel.swift */; };
-		A49E55072AE2ADFA001A4116 /* LoginViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55062AE2ADFA001A4116 /* LoginViewCoordinator.swift */; };
+		A49E55072AE2ADFA001A4116 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55062AE2ADFA001A4116 /* LoginCoordinator.swift */; };
+		A49E550A2AE2EFD1001A4116 /* SignUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55092AE2EFD1001A4116 /* SignUPView.swift */; };
+		A49E550C2AE2EFE1001A4116 /* SignUPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550B2AE2EFE1001A4116 /* SignUPViewModel.swift */; };
+		A49E550E2AE2EFF1001A4116 /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550D2AE2EFF1001A4116 /* SignUPViewController.swift */; };
+		A49E55102AE2F003001A4116 /* SignUPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */; };
 		A4E5A6792AE15F95007C450B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A6782AE15F95007C450B /* Coordinator.swift */; };
 		A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +52,11 @@
 		A45455AF2AE0564600E8C4D9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A49E55002AE2ADD4001A4116 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A49E55022AE2ADDE001A4116 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		A49E55062AE2ADFA001A4116 /* LoginViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCoordinator.swift; sourceTree = "<group>"; };
+		A49E55062AE2ADFA001A4116 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		A49E55092AE2EFD1001A4116 /* SignUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPView.swift; sourceTree = "<group>"; };
+		A49E550B2AE2EFE1001A4116 /* SignUPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewModel.swift; sourceTree = "<group>"; };
+		A49E550D2AE2EFF1001A4116 /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
+		A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPCoordinator.swift; sourceTree = "<group>"; };
 		A4E5A6782AE15F95007C450B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A49E54FF2AE2ADC2001A4116 /* Login */,
+				A49E55082AE2EFB2001A4116 /* SignUP */,
 				A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */,
 				A4E5A6772AE15F85007C450B /* Protocols */,
 				A45455A12AE053FA00E8C4D9 /* Views */,
@@ -183,9 +192,20 @@
 				A49E55002AE2ADD4001A4116 /* LoginView.swift */,
 				4C3862A72A758819005C9C3B /* LoginViewController.swift */,
 				A49E55022AE2ADDE001A4116 /* LoginViewModel.swift */,
-				A49E55062AE2ADFA001A4116 /* LoginViewCoordinator.swift */,
+				A49E55062AE2ADFA001A4116 /* LoginCoordinator.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A49E55082AE2EFB2001A4116 /* SignUP */ = {
+			isa = PBXGroup;
+			children = (
+				A49E55092AE2EFD1001A4116 /* SignUPView.swift */,
+				A49E550B2AE2EFE1001A4116 /* SignUPViewModel.swift */,
+				A49E550D2AE2EFF1001A4116 /* SignUPViewController.swift */,
+				A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */,
+			);
+			path = SignUP;
 			sourceTree = "<group>";
 		};
 		A4E5A6772AE15F85007C450B /* Protocols */ = {
@@ -293,7 +313,10 @@
 			files = (
 				4C3862A82A758819005C9C3B /* LoginViewController.swift in Sources */,
 				A45455A32AE0541B00E8C4D9 /* CustomTextField.swift in Sources */,
+				A49E550C2AE2EFE1001A4116 /* SignUPViewModel.swift in Sources */,
 				A4E5A6792AE15F95007C450B /* Coordinator.swift in Sources */,
+				A49E55102AE2F003001A4116 /* SignUPCoordinator.swift in Sources */,
+				A49E550E2AE2EFF1001A4116 /* SignUPViewController.swift in Sources */,
 				A45455B02AE0564600E8C4D9 /* CustomButton.swift in Sources */,
 				4C33FF352A75A4550002E765 /* DS+Colors.swift in Sources */,
 				A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */,
@@ -301,9 +324,10 @@
 				4C33FF332A75A3F40002E765 /* DS.swift in Sources */,
 				A45455AE2AE0554C00E8C4D9 /* UIFont+ext.swift in Sources */,
 				4C33FF2E2A75A2640002E765 /* UIColor+ext.swift in Sources */,
+				A49E550A2AE2EFD1001A4116 /* SignUPView.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
 				A49E55012AE2ADD4001A4116 /* LoginView.swift in Sources */,
-				A49E55072AE2ADFA001A4116 /* LoginViewCoordinator.swift in Sources */,
+				A49E55072AE2ADFA001A4116 /* LoginCoordinator.swift in Sources */,
 				4C3862A62A758819005C9C3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
