@@ -164,7 +164,7 @@ extension SignUPView {
             titleLabel.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 22),
             titleLabel.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -22),
 
-            textFieldStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            textFieldStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
             textFieldStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             textFieldStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 22),
             textFieldStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -22),
