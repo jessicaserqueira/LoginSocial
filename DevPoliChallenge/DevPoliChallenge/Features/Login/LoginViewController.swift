@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    var custonView = LoginView()
+    var custonView = SignUPView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
