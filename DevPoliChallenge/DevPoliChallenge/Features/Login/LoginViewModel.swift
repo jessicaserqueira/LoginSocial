@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class LoginViewModel {
+    var coordinator: LoginCoordinating?
+
+    init(coordinator: LoginCoordinating) {
+        self.coordinator = coordinator
+    }
+    
+    func didTapSignUpButton() {
+        coordinator?.showSignUpView()
+    }
+}

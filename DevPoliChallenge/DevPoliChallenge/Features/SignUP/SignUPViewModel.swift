@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class SignUPViewModel {
+    var coordinator: SignUPCoordinating?
+    
+    init(coordinator: SignUPCoordinating) {
+        self.coordinator = coordinator
+    }
+}
