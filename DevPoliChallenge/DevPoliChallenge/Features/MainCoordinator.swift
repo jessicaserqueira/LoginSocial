@@ -9,14 +9,21 @@
 import UIKit
 
 class MainCoordinator: Coordinator {
-  var navigationController: UINavigationController
-
-  init(navigationController: UINavigationController) {
-    self.navigationController = navigationController
-  }
-
-  func start() {
-    let viewController = LoginViewController()
-    navigationController.pushViewController(viewController, animated: false)
-  }
+    let window: UIWindow
+    var navigationController: UINavigationController
+    var navigationBarController: UINavigationBar
+    var childCoordinators: [Coordinator] = []
+    
+    init(window: UIWindow) {
+        self.window = window
+        self.navigationController = UINavigationController()
+        self.navigationBarController = UINavigationBar()
+    }
+    
+    func start() {
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        let loginCoordinator = LoginCoordinator(navigationController: navigationController)
+        coordinate(to: loginCoordinator)
+    }
 }

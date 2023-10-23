@@ -28,6 +28,8 @@
 		A49E550C2AE2EFE1001A4116 /* SignUPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550B2AE2EFE1001A4116 /* SignUPViewModel.swift */; };
 		A49E550E2AE2EFF1001A4116 /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550D2AE2EFF1001A4116 /* SignUPViewController.swift */; };
 		A49E55102AE2F003001A4116 /* SignUPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */; };
+		A49E55132AE6AE02001A4116 /* LoginCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55122AE6AE02001A4116 /* LoginCoordinating.swift */; };
+		A49E55152AE6AE11001A4116 /* SignUPCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55142AE6AE10001A4116 /* SignUPCoordinating.swift */; };
 		A4E5A6792AE15F95007C450B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A6782AE15F95007C450B /* Coordinator.swift */; };
 		A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		A49E550B2AE2EFE1001A4116 /* SignUPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewModel.swift; sourceTree = "<group>"; };
 		A49E550D2AE2EFF1001A4116 /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
 		A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPCoordinator.swift; sourceTree = "<group>"; };
+		A49E55122AE6AE02001A4116 /* LoginCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinating.swift; sourceTree = "<group>"; };
+		A49E55142AE6AE10001A4116 /* SignUPCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPCoordinating.swift; sourceTree = "<group>"; };
 		A4E5A6782AE15F95007C450B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,16 +151,8 @@
 				A49E55082AE2EFB2001A4116 /* SignUP */,
 				A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */,
 				A4E5A6772AE15F85007C450B /* Protocols */,
-				A45455A12AE053FA00E8C4D9 /* Views */,
 			);
 			path = Features;
-			sourceTree = "<group>";
-		};
-		A45455A12AE053FA00E8C4D9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A45455A42AE0547200E8C4D9 /* Components */ = {
@@ -212,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				A4E5A6782AE15F95007C450B /* Coordinator.swift */,
+				A49E55122AE6AE02001A4116 /* LoginCoordinating.swift */,
+				A49E55142AE6AE10001A4116 /* SignUPCoordinating.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -321,9 +319,11 @@
 				4C33FF352A75A4550002E765 /* DS+Colors.swift in Sources */,
 				A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */,
 				A49E55032AE2ADDE001A4116 /* LoginViewModel.swift in Sources */,
+				A49E55152AE6AE11001A4116 /* SignUPCoordinating.swift in Sources */,
 				4C33FF332A75A3F40002E765 /* DS.swift in Sources */,
 				A45455AE2AE0554C00E8C4D9 /* UIFont+ext.swift in Sources */,
 				4C33FF2E2A75A2640002E765 /* UIColor+ext.swift in Sources */,
+				A49E55132AE6AE02001A4116 /* LoginCoordinating.swift in Sources */,
 				A49E550A2AE2EFD1001A4116 /* SignUPView.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
 				A49E55012AE2ADD4001A4116 /* LoginView.swift in Sources */,
