@@ -30,6 +30,9 @@
 		A49E55102AE2F003001A4116 /* SignUPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */; };
 		A49E55132AE6AE02001A4116 /* LoginCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55122AE6AE02001A4116 /* LoginCoordinating.swift */; };
 		A49E55152AE6AE11001A4116 /* SignUPCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55142AE6AE10001A4116 /* SignUPCoordinating.swift */; };
+		A49E55192AE70D4A001A4116 /* SignINError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E55182AE70D4A001A4116 /* SignINError.swift */; };
+		A49E551B2AE83ABB001A4116 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E551A2AE83ABB001A4116 /* EmailValidator.swift */; };
+		A49E551D2AE83E19001A4116 /* LoginViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E551C2AE83E19001A4116 /* LoginViewModelDelegate.swift */; };
 		A4E5A6792AE15F95007C450B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A6782AE15F95007C450B /* Coordinator.swift */; };
 		A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		A49E550F2AE2F003001A4116 /* SignUPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPCoordinator.swift; sourceTree = "<group>"; };
 		A49E55122AE6AE02001A4116 /* LoginCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinating.swift; sourceTree = "<group>"; };
 		A49E55142AE6AE10001A4116 /* SignUPCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPCoordinating.swift; sourceTree = "<group>"; };
+		A49E55182AE70D4A001A4116 /* SignINError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignINError.swift; sourceTree = "<group>"; };
+		A49E551A2AE83ABB001A4116 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		A49E551C2AE83E19001A4116 /* LoginViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelDelegate.swift; sourceTree = "<group>"; };
 		A4E5A6782AE15F95007C450B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +153,7 @@
 		4C3862B92A758A98005C9C3B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A49E55172AE70D29001A4116 /* Models */,
 				A49E54FF2AE2ADC2001A4116 /* Login */,
 				A49E55082AE2EFB2001A4116 /* SignUP */,
 				A4E5A67A2AE1600D007C450B /* MainCoordinator.swift */,
@@ -204,12 +211,22 @@
 			path = SignUP;
 			sourceTree = "<group>";
 		};
+		A49E55172AE70D29001A4116 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A49E55182AE70D4A001A4116 /* SignINError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A4E5A6772AE15F85007C450B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				A4E5A6782AE15F95007C450B /* Coordinator.swift */,
 				A49E55122AE6AE02001A4116 /* LoginCoordinating.swift */,
 				A49E55142AE6AE10001A4116 /* SignUPCoordinating.swift */,
+				A49E551A2AE83ABB001A4116 /* EmailValidator.swift */,
+				A49E551C2AE83E19001A4116 /* LoginViewModelDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -318,7 +335,9 @@
 				A45455B02AE0564600E8C4D9 /* CustomButton.swift in Sources */,
 				4C33FF352A75A4550002E765 /* DS+Colors.swift in Sources */,
 				A4E5A67B2AE1600D007C450B /* MainCoordinator.swift in Sources */,
+				A49E551B2AE83ABB001A4116 /* EmailValidator.swift in Sources */,
 				A49E55032AE2ADDE001A4116 /* LoginViewModel.swift in Sources */,
+				A49E55192AE70D4A001A4116 /* SignINError.swift in Sources */,
 				A49E55152AE6AE11001A4116 /* SignUPCoordinating.swift in Sources */,
 				4C33FF332A75A3F40002E765 /* DS.swift in Sources */,
 				A45455AE2AE0554C00E8C4D9 /* UIFont+ext.swift in Sources */,
@@ -327,6 +346,7 @@
 				A49E550A2AE2EFD1001A4116 /* SignUPView.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
 				A49E55012AE2ADD4001A4116 /* LoginView.swift in Sources */,
+				A49E551D2AE83E19001A4116 /* LoginViewModelDelegate.swift in Sources */,
 				A49E55072AE2ADFA001A4116 /* LoginCoordinator.swift in Sources */,
 				4C3862A62A758819005C9C3B /* SceneDelegate.swift in Sources */,
 			);

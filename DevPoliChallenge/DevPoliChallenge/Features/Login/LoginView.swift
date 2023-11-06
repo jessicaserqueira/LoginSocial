@@ -8,9 +8,13 @@
 
 import UIKit
 
-class LoginView: UIView {
-    
-    var didPressButton: (() -> Void)?
+protocol LoginViewDelegate: AnyObject {
+    func didPressSignInButton(email: String, password: String)
+    func didPressSignUpButton()
+}
+
+class LoginView: UIView, EmailValidator {
+    weak var delegate: LoginViewDelegate?
     
     private lazy var mainView: UIView = {
         let view = UIView()
@@ -60,7 +64,7 @@ class LoginView: UIView {
         return stack
     }()
     
-    private lazy var emailTextField: CustomTextField = {
+    lazy var emailTextField: CustomTextField = {
         return CustomTextField(
             placeholder: "Email",
             type: .email,
@@ -89,7 +93,7 @@ class LoginView: UIView {
         )
     }()
     
-    private lazy var simpleButton: CustomButton = {
+    private lazy var signInButton: CustomButton = {
         return CustomButton(
             title: "ENTRAR",
             duoColorText: nil,
@@ -148,7 +152,7 @@ extension LoginView {
         
         mainView.addSubview(textFieldStackView)
         mainView.addSubview(forgotPasswordButton)
-        mainView.addSubview(simpleButton)
+        mainView.addSubview(signInButton)
         mainView.addSubview(signUpButton)
     }
     
@@ -171,10 +175,10 @@ extension LoginView {
             forgotPasswordButton.topAnchor.constraint(equalTo: textFieldStackView.bottomAnchor, constant: 10),
             forgotPasswordButton.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -22),
             
-            simpleButton.topAnchor.constraint(equalTo: forgotPasswordButton.bottomAnchor, constant: 10),
-            simpleButton.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 22),
-            simpleButton.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -22),
-            simpleButton.heightAnchor.constraint(equalToConstant: 55),
+            signInButton.topAnchor.constraint(equalTo: forgotPasswordButton.bottomAnchor, constant: 10),
+            signInButton.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 22),
+            signInButton.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -22),
+            signInButton.heightAnchor.constraint(equalToConstant: 55),
             
             signUpButton.centerXAnchor.constraint(equalTo: mainView.centerXAnchor),
             signUpButton.leadingAnchor.constraint(greaterThanOrEqualTo: mainView.leadingAnchor, constant: 100),
@@ -187,10 +191,21 @@ extension LoginView {
 // MARK: - Actions
 extension LoginView {
     func setupActions() {
-        signUpButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+        signInButton.addTarget(self, action: #selector(signInButtonTapped), for: .touchUpInside)
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonTapped), for: .touchUpInside)
     }
     
-    @objc func buttonTapped() {
-        didPressButton?()
+    @objc func signUpButtonTapped() {
+        delegate?.didPressSignUpButton()
+    }
+    
+    @objc func signInButtonTapped() {
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        delegate?.didPressSignInButton(email: email, password: password)
+    }
+    
+    @objc func forgotPasswordButtonTapped() {
     }
 }
